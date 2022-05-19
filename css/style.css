@@ -86,8 +86,6 @@ p, li, button, span { font-size: 1.6rem; font-weight: 300; }
 
 .pro1 { width: 100vw; margin: 0 auto; }
 
-.pro1 a { text-decoration: none; }
-
 .pro1 span { font-size: 1.6rem; font-weight: 300; }
 
 .pro1 h6 { font-size: 2.4rem; font-weight: 700; }
@@ -117,6 +115,8 @@ p, li, button, span { font-size: 1.6rem; font-weight: 300; }
 .pro1__color { width: 18rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-right: 4rem; }
 
 .pro1__btn { width: 12rem; height: 3.2rem; background-color: #fff; border: 1px solid #000; border-radius: 2rem; font-size: 2rem; width: 18rem; height: 5rem; color: hotpink; border-color: hotpink; border-radius: 6rem; }
+
+.pro1__btn a { text-decoration: none; }
 
 .pro1__btn:hover, .pro1__btn:active { background-color: #f7f7f7; cursor: pointer; }
 
@@ -258,8 +258,6 @@ p, li, button, span { font-size: 1.6rem; font-weight: 300; }
 
 .pro3__bottom h5 { text-align: center; margin-top: 18rem; margin-bottom: 5rem; }
 
-.pro3__bottom .col-sm-3:nth-child(2) { background-color: aqua; }
-
 .pro3__bottom .imgcontain__img { width: 30rem; height: 30rem; margin: 0 auto; background-repeat: no-repeat; background-position: center; background-size: cover; }
 
 .pro3__bottom .imgcontain__img--1 { background-image: url(../img/sun-1.png); }
@@ -318,16 +316,20 @@ p, li, button, span { font-size: 1.6rem; font-weight: 300; }
 @media (max-width: 662px) { html { font-size: 5px; }
   .gnb { height: 10rem; }
   .pro3__bottom { width: 100vw; height: 300rem; margin: 0 auto; }
-  .pro3__bottom li { width: 100%; height: 70rem; }
+  .pro3__bottom li { width: 100%; height: 75rem; }
   .pro3__bottom li .imgcontain__img { width: 50rem; height: 50rem; margin-bottom: 3rem; }
+  .pro3__bottom li .imgcontain__img--4 { margin-top: -4rem; }
   .popup1__content, .popup2__content { height: 70vh; }
   .popup1__img, .popup2__img { height: 70vh; } }
 
 @media (max-width: 480px) { html { font-size: 4px; }
   .gnb { height: 10rem; }
-  .pro3__bottom { width: 100vw; height: 300rem; margin: 0 auto; }
-  .pro3__bottom li { width: 100%; height: 70rem; }
-  .pro3__bottom li .imgcontain__img { width: 50rem; height: 50rem; margin-bottom: 3rem; }
+  .pro3__bottom { width: 100vw; height: 300rem; margin: 0 auto 6rem auto; }
+  .pro3__bottom h5 { margin-top: 10rem; font-size: 4rem; }
+  .pro3__bottom li { width: 100%; height: 75rem; }
+  .pro3__bottom li span { font-size: 3.4rem; }
+  .pro3__bottom li p { margin-bottom: 2rem; }
+  .pro3__bottom li .imgcontain__img { width: 50rem; height: 50rem; }
   .popup1__content, .popup2__content { height: 60vh; }
   .popup1__img, .popup2__img { height: 60vh; } }
 
