@@ -1,7 +1,8 @@
 .gnb {
   width: 100vw;
   height: 7rem;
-  background-color: $color--white;
+  // background-color: $color--white;
+  background-color: rgba($color: #fff, $alpha: 0.3);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -49,6 +50,7 @@
       @include button;
       border-color: $color--pink;
       color: $color--pink;
+      background-color: rgba($color: #fff, $alpha: 0.3);
     }
   }
 }
@@ -59,16 +61,23 @@
 
 .header {
   width: 100vw;
-  height: 76rem;
-  background-image: url(../img/mainbg.png);
+  height: 80rem;
   background-color: #fff4e9;
-  @include bgimg;
-  background-size: contain;
+  // background-color: aquamarine;
+  // @include bgimg;
+  // background-size: contain;
+
   // margin-top: 14rem;
 
   //피드백
   //배경 밑부분 약간 자르기.
   //밑 콘텐츠 약간 더 보이게(사용자 유출방지)
+
+  #myimg {
+    width: 100vw;
+    margin-top: 16rem;
+    position: absolute;
+  }
 
   &__txt {
     position: relative;
@@ -190,5 +199,9 @@
     font-weight: 700;
     color: $color--gray;
     margin-bottom: 1.8rem;
+  }
+  ul {
+    padding: 0;
+    background-color: aquamarine;
   }
 }

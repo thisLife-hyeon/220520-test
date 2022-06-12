@@ -22,6 +22,29 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+
+    <!-- 제이쿼리 불러오기 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- gsap(애니메이션 라이브러리, 스크롤매직이 내부적으로 이 녀석을 쓴다.) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.5/gsap.min.js"></script>
+
+<!-- 스크롤 매직 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+
+<!-- 디버그용 인디케이터, 실전에선 필요없음 -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.js"></script> -->
+
+<!-- gsap 용 플러그인 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.js"></script>
+
+<!-- 스와이프 -->
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
   </head>
   <body>
     <nav class="gnb">
@@ -36,10 +59,16 @@
     </nav>
     <div class="wrapper">
       <header class="header" id="home">
+        <div class="spacer s2"></div>
+        <div class="spacer s0" id="trigger"></div>
+        <div id="imagesequence">
+          <img id="myimg" src='img/bg-1.png'>
+        </div>
+        <!-- <div class="spacer s2"></div> -->
         <div class="header__txt active__box">
           <h1>Portfolio</h1>
           <p>양명현의 작업물을 담은 포트폴리오.</p>
-          <p>2021.03.02~2022.00.00</p>
+          <p>2021.03.02~2022.06.07</p>
         </div>
       </header>
       <div class="profile">
@@ -100,9 +129,37 @@
           </div>
         </div>
       </div>
+      <div class="pro2">
+        <div class="pro2__top" id="project2">
+          <h4>WEB DESIGN</h4>
+          <ul class="dots" >
+            <li class="dot dot--jj1"></li>
+            <li class="dot dot--jj2"></li>
+            <li class="dot dot--jj3"></li>
+          </ul>
+          <div class="pro2__imgbox">
+            <div class="pro2__img pro2__img--1" ></div>
+            <div class="pro2__img pro2__img--2">
+              <h5>배달의민족 랜딩페이지</h5>
+              <p>
+                <span>배달의민족 색상 활용.</span>
+                <span>임펙트 있게,</span>
+                <span>하단에는 이용안내 및 추천코스, 공원의 위치를 담아냈다.</span>
+                <span>중앙에는 공원의 9가지 테마를 일러스트로 표현하였다.</span>
+              </p>
+              <a href="#popup1">
+                <button class="pro2__btn">
+                  크게보기
+                </button>
+              </a>
+            </div>
+          </div>
+      </div>
+      <div class="pro2__bottom">
+      </div>
       <div class="pro1">
         <div class="pro1__top">
-          <h4>WEB design</h4>
+          <h4>App design</h4>
           <ul class="dots">
             <li class="dot dot--pp1"></li>
             <li class="dot dot--pp2"></li>

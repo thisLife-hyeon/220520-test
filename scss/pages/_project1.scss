@@ -97,6 +97,7 @@
   &__btn {
     a {
       text-decoration: none;
+      color: $color--pink;
     }
     @include button;
     font-size: 2rem;
