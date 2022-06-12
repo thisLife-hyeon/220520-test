@@ -68,7 +68,8 @@
           }
           .pro4__btn {
             @include button;
-            width: 14rem;
+            width: 16rem;
+            height: 4rem;
             background-color: transparent;
             color: $color--white;
             border-color: $color--white;

@@ -3,6 +3,7 @@ $color--white: #fff;
 $color--lightgray: #f7f7f7;
 $color--gray: #929292;
 $color--darkgray: #535353;
+$color--black: #000;
 $color--pink: hotpink;
 $color--lightpink: #ffdcf0;
 
@@ -34,7 +35,7 @@ $color--lightpink: #ffdcf0;
 }
 
 @mixin pseudo {
-  content: '';
+  content: "";
   position: absolute;
   top: 0px;
   left: 0px;
