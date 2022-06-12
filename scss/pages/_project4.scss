@@ -1,4 +1,4 @@
-.pro2 {
+.pro4 {
   width: 100vw;
   margin: 0 auto;
 
@@ -26,8 +26,8 @@
 
     &::before {
       @include pseudo;
-      background: url(../img/jeju-mockup.png);
-      opacity: 0.5;
+      background-image: url(../img/web-header.png);
+      opacity: 0.4;
       @include bgimg;
     }
 
@@ -38,7 +38,7 @@
       font-weight: 300;
     }
 
-    .pro2 {
+    .pro4 {
       &__imgbox {
         z-index: 1;
         width: 100rem;
@@ -51,7 +51,8 @@
         @include bgimg;
         &--1 {
           height: 66.3rem;
-          background-image: url(../img/jeju-info.png);
+          background-image: url(../img/web-design.png);
+          background-position-y: 68%;
         }
         &--2 {
           margin-top: 20%;
@@ -65,7 +66,7 @@
             display: block;
             line-height: 3rem;
           }
-          .pro2__btn {
+          .pro4__btn {
             @include button;
             width: 14rem;
             background-color: transparent;
@@ -87,28 +88,28 @@
   .dot {
     z-index: 1;
     &--jj1 {
-      background-color: #214f26;
+      background-color: #2ac1bc;
     }
     &--jj2 {
-      background-color: #a6ce39;
+      background-color: #ffffff;
     }
     &--jj3 {
-      background-color: #9fdae6;
+      background-color: #373737;
     }
     &--4 {
-      background-color: #214f26;
+      background-color: #2ac1bc;
       width: 6.4rem;
       height: 6.4rem;
       margin-right: 1rem;
     }
     &--5 {
-      background-color: #a6ce39;
+      background-color: #ffffff;
       width: 6.4rem;
       height: 6.4rem;
       margin-right: 1rem;
     }
     &--6 {
-      background-color: #9fdae6;
+      background-color: #373737;
       width: 6.4rem;
       height: 6.4rem;
       margin-right: 1rem;
@@ -124,7 +125,7 @@
     margin: 15rem auto 56rem auto;
     // background-color: $color--lightgray;
 
-    .pro2 {
+    .pro4 {
       &__title {
         width: 36rem;
         height: 20rem;

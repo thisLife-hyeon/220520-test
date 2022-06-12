@@ -13,10 +13,11 @@
 
   &__top {
     width: 100%;
-    height: 100rem;
+    height: 97rem;
     background-color: $color--lightgray;
     @include flex;
     flex-direction: column;
+    // margin-top: -6rem;
 
     h4 {
       font-size: 4.8rem;
@@ -24,49 +25,69 @@
       margin-bottom: 2rem;
     }
 
-    .pro1 {
-      &__imgbox {
-        display: flex;
-        margin-top: 8rem;
-      }
-      &__img {
-        width: 27rem;
-        height: 60rem;
-        @include bgimg;
-        // box-shadow: 10px 5px 5px #000;
-        &--1 {
-          background-image: url(../img/pp1.jpg);
-          position: relative;
-          z-index: 0;
-          left: 10rem;
-          bottom: 8rem;
-        }
-        &--2 {
-          background-image: url(../img/pp2.jpg);
-          position: relative;
-          z-index: 1;
-          left: 5rem;
-          bottom: 4rem;
-        }
-        &--3 {
-          background-image: url(../img/pp3.jpg);
-          position: relative;
-          z-index: 2;
-        }
-        &--4 {
-          background-image: url(../img/pp4.jpg);
-          position: relative;
-          z-index: 1;
-          right: 5rem;
-          bottom: 4rem;
-        }
-        &--5 {
-          background-image: url(../img/pp5.jpg);
-          position: relative;
-          z-index: 0;
-          right: 10rem;
-          bottom: 8rem;
-        }
+    //   .pro1 {
+    //     &__imgbox {
+    //       display: flex;
+    //       margin-top: 8rem;
+    //     }
+    //     &__img {
+    //       width: 27rem;
+    //       height: 60rem;
+    //       @include bgimg;
+    //       box-shadow: 1px 1px 20px rgba($color: #000000, $alpha: 0.2);
+    //       &--1 {
+    //         background-image: url(../img/pp1.jpg);
+    //         position: relative;
+    //         z-index: 0;
+    //         left: 10rem;
+    //         bottom: 8rem;
+    //       }
+    //       &--2 {
+    //         background-image: url(../img/pp2.jpg);
+    //         position: relative;
+    //         z-index: 1;
+    //         left: 5rem;
+    //         bottom: 4rem;
+    //       }
+    //       &--3 {
+    //         background-image: url(../img/pp3.jpg);
+    //         position: relative;
+    //         z-index: 2;
+    //       }
+    //       &--4 {
+    //         background-image: url(../img/pp4.jpg);
+    //         position: relative;
+    //         z-index: 1;
+    //         right: 5rem;
+    //         bottom: 4rem;
+    //       }
+    //       &--5 {
+    //         background-image: url(../img/pp5.jpg);
+    //         position: relative;
+    //         z-index: 0;
+    //         right: 10rem;
+    //         bottom: 8rem;
+    //       }
+    //     }
+    //   }
+  }
+  .swiper {
+    width: 120rem;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    .swiper-slide {
+      // @include bgimg;
+      width: 27rem;
+      height: 60rem;
+      background-position: center;
+      background-size: cover;
+
+      img {
+        display: block;
+        width: 100%;
+        // width: 27rem;
+        border-radius: 30px;
       }
     }
   }
